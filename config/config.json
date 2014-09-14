@@ -1,0 +1,14 @@
+{
+    "port"                          :   6364,
+
+    "database.host"                 :   "localhost",
+    "database.name"                 :   "sparro_db",
+    "ref.database.name"             :   "sparro_db_ref",
+    "database.user"                 :   "root",
+    "database.pass"                 :   "ankit",
+
+    "upload.path"                   :   "/var/sparro/upload",
+
+    "Dashboard.httpPort"            :   6364,
+    "Dashboard.httpsPort"           :   6365
+}

@@ -1,0 +1,7 @@
+*.js.map
+.DS_Store
+.idea
+*.js
+!.gitignore
+*.html
+DefinitelyTyped/

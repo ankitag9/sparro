@@ -1,0 +1,913 @@
+doctype html
+head
+title The Parallel Website Template | Home :: w3layouts
+    link(href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900', rel='stylesheet', type='text/css')
+    link(href='web/css/style.css', rel='stylesheet', type='text/css', media='all')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    link(rel='stylesheet', type='text/css', href='web/css/magnific-popup1.css')
+    link(rel='stylesheet', type='text/css', href='web/css/prettyPhoto.css')
+    //
+        jquery plguin 
+    script(type='text/javascript', src='web/js/jquery.min.js')
+    //
+      start slider 
+    link(rel='stylesheet', href='web/css/fwslider.css', media='all')
+    script(src='web/js/jquery-ui.min.js')
+    script(src='web/js/css3-mediaqueries.js')
+    script(src='web/js/fwslider.js')
+    //
+      end slider 
+    script(type='text/javascript').
+      $(document).ready(function() {
+      var defaults = {
+      containerID: 'toTop', // fading element id
+      containerHoverID: 'toTopHover', // fading element hover id
+      scrollSpeed: 1200,
+      easingType: 'linear'
+      };
+      $().UItoTop({ easingType: 'easeOutQuart' });
+      });
+    //
+       Add fancyBox light-box 
+    script(src='js/jquery.magnific-popup.js', type='text/javascript')
+    script.
+      $(document).ready(function() {
+      $('.popup-with-zoom-anim').magnificPopup({
+      type: 'inline',
+      fixedContentPos: false,
+      fixedBgPos: true,
+      overflowY: 'auto',
+      closeBtnInside: true,
+      preloader: false,
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-zoom-in'
+      });
+      });
+    //
+       //End fancyBox light-box 
+  body
+    //
+       start header 
+    .header_bg
+      .wrap
+        .header
+          .logo
+            h1
+              a(href='index.html')
+                img(src='web/images/logo.png', alt='')
+          .h_right
+            ul.menu
+              li.active
+                a(href='#home') Home
+              li
+                a.scroll(href='#services') Services
+              li
+                a.scroll(href='#portfolio') Portfolio
+              li
+                a.scroll(href='#pricing') Pricing
+              li
+                a.scroll(href='#about') About
+              li.last
+                a.scroll(href='#contact') Contact
+            #sb-search.sb-search
+              form
+                input#search.sb-search-input(placeholder='Enter your search term...', type='text', value='', name='search')
+                input.sb-search-submit(type='submit', value='')
+                span.sb-icon-search
+            script(src='web/js/classie.js')
+            script(src='web/js/uisearch.js')
+            script
+              new UISearch( document.getElementById( 'sb-search' ) );
+            //
+               start smart_nav * 
+            nav.nav
+              ul.nav-list
+                li.nav-item
+                  a(href='#home') Home
+                li.nav-item
+                  a.scroll(href='#services') Services
+                li.nav-item
+                  a.scroll(href='#portfolio') Portfolio
+                li.nav-item
+                  a.scroll(href='#pricing') Pricing
+                li.nav-item
+                  a.scroll(href='#about') About
+                li.nav-item
+                  a.scroll(href='#contact') Contact
+                .clear
+            script(type='text/javascript', src='web/js/responsive.menu.js')
+            //
+               end smart_nav * 
+          .clear
+    //
+      --start-images-slider--
+    .web/images-slider
+      //
+         start slider 
+      #fwslider
+        .slider_container
+          .slide
+            //
+               Slide image 
+            img(src='web/images/slider-bg.jpg', alt='')
+            //
+               /Slide image 
+            //
+               Texts container 
+            .slide_content
+              .slide_content_wrap
+                //
+                   Text title 
+                h4.title Welcome To Parallels
+                //
+                   /Text title 
+                //
+                   Text description 
+                p.description Clean Responsive Parallax Theme
+                //
+                   /Text description 
+                .slide-btns.description
+            //
+               /Texts container 
+          //
+             /Duplicate to create more slides 
+          .slide
+            img(src='web/images/slider-bg.jpg', alt='')
+            .slide_content
+              .slide_content_wrap
+                //
+                   Text title 
+                h4.title To Parallel is to live
+                //
+                   /Text title 
+                //
+                   Text description 
+                p.description You Don't Need Magic to Disappear
+                //
+                   /Text description 
+                .slide-btns.description
+          //
+            /slide 
+        .timers  
+        .slidePrev
+          span  
+        .slideNext
+          span  
+      //
+        /slider 
+    //
+      ---------service----------
+    #services.sevice
+      .wrap
+        .service-grids
+          h2 our Services
+          .images_1_of_4
+            img(src='web/images/cal.png')
+            h3
+              a(href='#') WebDesign
+            p
+              | Lorem ipsum is simply dummy text of the printing and typesetting industry.Lorem ipsum has been
+          .images_1_of_4
+            img(src='web/images/port.png')
+            h3
+              a(href='#') UIDesign
+            p
+              | Lorem ipsum is simply dummy text of the printing and typesetting industry.Lorem ipsum has been
+          .images_1_of_4
+            img(src='web/images/recyle.png')
+            h3
+              a(href='#') Prototype
+            p
+              | Lorem ipsum is simply dummy text of the printing and typesetting industry.Lorem ipsum has been
+          .images_1_of_4
+            img(src='web/images/camera.png')
+            h3
+              a(href='#') Photography
+            p
+              | Lorem ipsum is simply dummy text of the printing and typesetting industry.Lorem ipsum has been
+          .clear  
+    //
+      ---------//service//----------
+    //
+      --------- message ----------
+    .message
+      .wrap
+        h3 Do You Like This Clean Theme?
+        .buttons
+          .span1
+            a(href='#')
+              i Purchase
+              .clear
+          .span2
+            a(href='#')
+              i Follow
+              .clear
+          .clear
+    #cbp-so-scroller.cbp-so-scroller
+      //
+        Portfolio
+      #portfolio.clearfix
+        .portfolio-bg  
+        .typo1
+          .wrapper.clearfix
+            .section-title
+              h3.heading Portfolio
+              h6  
+            //
+              end:section-title
+            #options.clearfix
+              ul#filters.option-set.clearfix(data-option-key='filter')
+                li
+                  a(href='#filter', data-option-value='.web-design') Web-design
+                li
+                  a(href='#filter', data-option-value='.photo') UI Design
+                li
+                  a(href='#filter', data-option-value='.ios-app') Prototype
+                li
+                  a(href='#filter', data-option-value='.graphic') Photography
+              //
+                end:filters
+          //
+            end:wrapper
+          ul#container.clickable.cs-style-5.grid.clearfix.isotope(style='position: relative; overflow: hidden; height: 534px; width: 1475px;')
+            li.element.photo.isotope-item(style='position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 0px, 0px);')
+              figure
+                img(src='web/images/pf-1.jpg', alt='')
+                figcaption
+                  h3
+                    a(href='#') This is project name
+                  .meta-box.clearfix
+                    span.entry-categories
+                      a(href='#') print art
+                    | /
+                    span.entry-categories
+                      a(href='#') photo
+                  footer
+                    #nivo-lightbox-demo
+                      p
+                        a#nivo-lightbox-demo(href='web/images/pf-1.jpg', data-lightbox-gallery='gallery1')  View
+            li.element.web-design.isotope-item(style='position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);')
+              figure
+                img(src='web/images/pf-2.jpg', alt='')
+                figcaption
+                  h3
+                    a(href='#') This is project name
+                  .meta-box.clearfix
+                    span.entry-categories
+                      a(href='#') print art
+                    | /
+                    span.entry-categories
+                      a(href='#') photo
+                  footer
+                    #nivo-lightbox-demo
+                      p
+                        a#nivo-lightbox-demo(href='web/images/pf-2.jpg', data-lightbox-gallery='gallery1')  View
+            li.element.ios-app.isotope-item(style='position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(590px, 0px, 0px);')
+              figure
+                img(src='web/images/pf-3.jpg', alt='')
+                figcaption
+                  h3
+                    a(href='#') This is project name
+                  .meta-box.clearfix
+                    span.entry-categories
+                      a(href='#') print art
+                    | /
+                    span.entry-categories
+                      a(href='#') photo
+                  footer
+                    #nivo-lightbox-demo
+                      p
+                        a#nivo-lightbox-demo(href='web/images/pf-3.jpg', data-lightbox-gallery='gallery1')  View
+            li.element.graphic.isotope-item(style='position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(885px, 0px, 0px);')
+              figure
+                img(src='web/images/pf-4.jpg', alt='')
+                figcaption
+                  h3
+                    a(href='#') This is project name
+                  .meta-box.clearfix
+                    span.entry-categories
+                      a(href='#') print art
+                    | /
+                    span.entry-categories
+                      a(href='#') photo
+                  footer
+                    #nivo-lightbox-demo
+                      p
+                        a#nivo-lightbox-demo(href='web/images/pf-4.jpg', data-lightbox-gallery='gallery1')  View
+            li.element.photo.isotope-item(style='position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(1180px, 0px, 0px);')
+              figure
+                img(src='web/images/pf-5.jpg', alt='')
+                figcaption
+                  h3
+                    a(href='#') This is project name
+                  .meta-box.clearfix
+                    span.entry-categories
+                      a(href='#') print art
+                    | /
+                    span.entry-categories
+                      a(href='#') photo
+                  footer
+                    #nivo-lightbox-demo
+                      p
+                        a#nivo-lightbox-demo(href='web/images/pf-5.jpg', data-lightbox-gallery='gallery1')  View
+            li.element.web-design.isotope-item(style='position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 267px, 0px);')
+              figure
+                img(src='web/images/pf-6.jpg', alt='')
+                figcaption
+                  h3
+                    a(href='#') This is project name
+                  .meta-box.clearfix
+                    span.entry-categories
+                      a(href='#') print art
+                    | /
+                    span.entry-categories
+                      a(href='#') photo
+                  footer
+                    #nivo-lightbox-demo
+                      p
+                        a#nivo-lightbox-demo(href='web/images/pf-6.jpg', data-lightbox-gallery='gallery1')  View
+            li.element.ios-app.isotope-item(style='position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 267px, 0px);')
+              figure
+                img(src='web/images/pf-7.jpg', alt='')
+                figcaption
+                  h3
+                    a(href='#') This is project name
+                  .meta-box.clearfix
+                    span.entry-categories
+                      a(href='#') print art
+                    | /
+                    span.entry-categories
+                      a(href='#') photo
+                  footer
+                    #nivo-lightbox-demo
+                      p
+                        a#nivo-lightbox-demo(href='web/images/pf-7.jpg', data-lightbox-gallery='gallery1')  View
+            li.element.graphic.isotope-item(style='position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(590px, 267px, 0px);')
+              figure
+                img(src='web/images/pf-8.jpg', alt='')
+                figcaption
+                  h3
+                    a(href='#') This is project name
+                  .meta-box.clearfix
+                    span.entry-categories
+                      a(href='#') print art
+                    | /
+                    span.entry-categories
+                      a(href='#') photo
+                  footer
+                    #nivo-lightbox-demo
+                      p
+                        a#nivo-lightbox-demo(href='web/images/pf-8.jpg', data-lightbox-gallery='gallery1')  View
+            li.element.photo.isotope-item(style='position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(885px, 267px, 0px);')
+              figure
+                img(src='web/images/pf-9.jpg', alt='')
+                figcaption
+                  h3
+                    a(href='#') This is project name
+                  .meta-box.clearfix
+                    span.entry-categories
+                      a(href='#') print art
+                    | /
+                    span.entry-categories
+                      a(href='#') photo
+                  footer
+                    #nivo-lightbox-demo
+                      p
+                        a#nivo-lightbox-demo(href='web/images/pf-9.jpg', data-lightbox-gallery='gallery1')  View
+            li.element.web-design.isotope-item(style='position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(1180px, 267px, 0px);')
+              figure
+                img(src='web/images/pf-10.jpg', alt='')
+                figcaption
+                  h3
+                    a(href='#') This is project name
+                  .meta-box.clearfix
+                    span.entry-categories
+                      a(href='#') print art
+                    | /
+                    span.entry-categories
+                      a(href='#') photo
+                  footer
+                    #nivo-lightbox-demo
+                      p
+                        a#nivo-lightbox-demo(href='web/images/pf-10.jpg', data-lightbox-gallery='gallery1')  View
+            .clear  
+          //
+             #container 
+        //
+          end:typo1
+    //
+       portfolio_script_javascript
+    script(type='text/javascript', src='web/js/jquery.min.js')
+    script(src='web/js/jquery.isotope.min.js')
+    script(src='web/js/jquery.prettyPhoto.js')
+    script(src='web/js/custom.js')
+    script(src='web/js/modernizr.custom.js')
+    //
+      --------- message1 ----------
+    .message1
+      .wrap
+        h3 Pricing Table
+        p Clean beautiful flat Table
+    //
+      ---------start-pricing---------
+    #pricing.pricing-plans
+      .wrap
+        h3 Our Price
+        .pricing-grids
+          .pricing-grid
+            .price-value
+              a(href='#') Wesite hosting
+            h3
+              a(href='#') $5.01/month
+            ul
+              li
+                a(href='#') Lorem ipsum
+              li
+                a(href='#') Dolor sitamet, Consect
+              li
+                a(href='#') Adipiscing elit
+              li
+                a(href='#') Proin commodo turips
+              li
+                a(href='#') Laws pulvinarvel
+              li
+                a(href='#') Prnare nisi pretium
+            .cart
+              .span3
+                a.popup-with-zoom-anim(href='#small-dialog')
+                  i Purchase
+          .pricing-grid
+            .price-value
+              a(href='#') Reseller cloud
+            h3
+              a(href='#') $10.01/month
+            ul
+              li
+                a(href='#') Lorem ipsum
+              li
+                a(href='#') Dolor sitamet, Consect
+              li
+                a(href='#') Adipiscing elit
+              li
+                a(href='#') Proin commodo turips
+              li
+                a(href='#') Laws pulvinarvel
+              li
+                a(href='#') Prnare nisi pretium
+            .cart
+              .span3
+                a.popup-with-zoom-anim(href='#small-dialog')
+                  i Purchase
+          .pricing-grid
+            .price-value
+              a(href='#') Dedicated hosting
+            h3
+              a(href='#') $20.01/month
+            ul
+              li
+                a(href='#') Lorem ipsum
+              li
+                a(href='#') Dolor sitamet, Consect
+              li
+                a(href='#') Adipiscing elit
+              li
+                a(href='#') Proin commodo turips
+              li
+                a(href='#') Laws pulvinarvel
+              li
+                a(href='#') Prnare nisi pretium
+            .cart
+              .span3
+                a.popup-with-zoom-anim(href='#small-dialog')
+                  i Purchase
+          .clear  
+          .pricing-grids
+            .pricing-grid1
+              .price-value
+                a(href='#') Wesite hosting
+              h3
+                a(href='#') $5.01/month
+              ul
+                li
+                  a(href='#') Lorem ipsum
+                li
+                  a(href='#') Dolor sitamet, Consect
+                li
+                  a(href='#') Adipiscing elit
+                li
+                  a(href='#') Proin commodo turips
+                li
+                  a(href='#') Laws pulvinarvel
+                li
+                  a(href='#') Prnare nisi pretium
+              .cart1
+                .span3
+                  a.popup-with-zoom-anim(href='#small-dialog')
+                    j Purchase
+            .pricing-grid2
+              .price-value
+                a(href='#') Reseller cloud
+              h3
+                a(href='#') $10.01/month
+              ul
+                li
+                  a(href='#') Lorem ipsum
+                li
+                  a(href='#') Dolor sitamet, Consect
+                li
+                  a(href='#') Adipiscing elit
+                li
+                  a(href='#') Proin commodo turips
+                li
+                  a(href='#') Laws pulvinarvel
+                li
+                  a(href='#') Prnare nisi pretium
+              .cart1
+                .span3
+                  a.popup-with-zoom-anim(href='#small-dialog')
+                    k Purchase
+            .pricing-grid3
+              .price-value
+                a(href='#') Dedicated hosting
+              h3
+                a(href='#') $20.01/month
+              ul
+                li
+                  a(href='#') Lorem ipsum
+                li
+                  a(href='#') Dolor sitamet, Consect
+                li
+                  a(href='#') Adipiscing elit
+                li
+                  a(href='#') Proin commodo turips
+                li
+                  a(href='#') Laws pulvinarvel
+                li
+                  a(href='#') Prnare nisi pretium
+              .cart1
+                .span3
+                  a.popup-with-zoom-anim(href='#small-dialog')
+                    l Purchase
+            .pricing-grid4
+              .price-value
+                a(href='#') Dedicated hosting
+              h3
+                a(href='#') $20.01/month
+              ul
+                li
+                  a(href='#') Lorem ipsum
+                li
+                  a(href='#') Dolor sitamet, Consect
+                li
+                  a(href='#') Adipiscing elit
+                li
+                  a(href='#') Proin commodo turips
+                li
+                  a(href='#') Laws pulvinarvel
+                li
+                  a(href='#') Prnare nisi pretium
+              .cart1
+                .span3
+                  a.popup-with-zoom-anim(href='#small-dialog')
+                    m Purchase
+            //
+              ---pop-up-grid--
+            #small-dialog.mfp-hide
+              .pop_up
+                .payment-online-form-left
+                  form
+                    h4
+                      span.shipping  
+                      | Shipping
+                    ul
+                      li
+                        input.text-box-dark(type='text', value='Frist Name', onfocus='this.value = \'\';', onblur='if (this.value == \'\') {this.value = \'Frist Name\';}')
+                      li
+                        input.text-box-dark(type='text', value='Last Name', onfocus='this.value = \'\';', onblur='if (this.value == \'\') {this.value = \'Last Name\';}')
+                    ul
+                      li
+                        input.text-box-dark(type='text', value='Email', onfocus='this.value = \'\';', onblur='if (this.value == \'\') {this.value = \'Email\';}')
+                      li
+                        input.text-box-dark(type='text', value='Company Name', onfocus='this.value = \'\';', onblur='if (this.value == \'\') {this.value = \'Company Name\';}')
+                    ul
+                      li
+                        input.text-box-dark(type='text', value='Phone', onfocus='this.value = \'\';', onblur='if (this.value == \'\') {this.value = \'Phone\';}')
+                      li
+                        input.text-box-dark(type='text', value='Address', onfocus='this.value = \'\';', onblur='if (this.value == \'\') {this.value = \'Address\';}')
+                      .clear  
+                    .clear  
+                    ul.payment-type
+                      h4
+                        span.payment  
+                        | Payments
+                      li
+                        span.col_checkbox
+                          input#3.css-checkbox1(type='checkbox')
+                          label.css-label1(for='3', name='demo_lbl_1')  
+                          a.visa(href='#')  
+                      li
+                        span.col_checkbox
+                          input#4.css-checkbox2(type='checkbox')
+                          label.css-label2(for='4', name='demo_lbl_2')  
+                          a.paypal(href='#')  
+                      .clear  
+                    ul
+                      li
+                        input.text-box-dark(type='text', value='Card Number', onfocus='this.value = \'\';', onblur='if (this.value == \'\') {this.value = \'Card Number\';}')
+                      li
+                        input.text-box-dark(type='text', value='Name on card', onfocus='this.value = \'\';', onblur='if (this.value == \'\') {this.value = \'Name on card\';}')
+                      .clear  
+                    ul
+                      li
+                        input#datepicker.text-box-light.hasDatepicker(type='text', value='Expiration Date', onfocus='this.value = \'\';', onblur='if (this.value == \'\') {this.value = \'Expiration Date\';}')
+                        em.pay-date  
+                      li
+                        input.text-box-dark(type='text', value='Security Code', onfocus='this.value = \'\';', onblur='if (this.value == \'\') {this.value = \'Security Code\';}')
+                      .clear  
+                    ul.payment-sendbtns
+                      li
+                        input(type='reset', value='Cancel')
+                      li
+                        input(type='submit', value='Process order')
+                    .clear  
+            //
+              ---pop-up-grid--
+          .clear  
+        .client
+          h3
+            img(src='web/images/line.png')
+            i CLIENT ABOUT US
+            img(src='web/images/line.png')
+          .img
+            img(src='web/images/left.png')
+          .data
+            p
+              | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+            p
+              a(href='#') #INDUSTY
+          .img1
+            img(src='web/images/right.png')
+          .clear  
+    //
+       Add fancyBox light-box 
+    //
+       Add fancyBox light-box 
+    script(src='web/js/jquery.magnific-popup.js', type='text/javascript')
+    script.
+      $(document).ready(function() {
+      $('.popup-with-zoom-anim').magnificPopup({
+      type: 'inline',
+      fixedContentPos: false,
+      fixedBgPos: true,
+      overflowY: 'auto',
+      closeBtnInside: true,
+      preloader: false,
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-zoom-in'
+      });
+      });
+    //
+       //End fancyBox light-box 
+    //
+      --End-pricingplans--
+    //
+      ---------end-pricing-----------
+    //
+      --------- message2 ----------
+    .message2
+      .wrap
+        h3 Our team
+        p We a professional and progresive team
+    //
+      --------- about ----------
+    #about.about
+      .wrap
+        h4 About Us
+        .section.group
+          .label_1_of_4.about_1_of_4
+            img(src='web/images/about1.jpg')
+            h3 MICHAEL TURNER 
+            span consectetur
+            p
+              | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.
+          .label_1_of_4.about_1_of_4
+            img(src='web/images/about2.jpg')
+            h3 JOHN SMITH 
+            span consectetur
+            p
+              | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.
+          .label_1_of_4.about_1_of_4
+            img(src='web/images/about3.jpg')
+            h3 ASHLEY HUNTER 
+            span consectetur
+            p
+              | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer .
+          .label_1_of_4.about_1_of_4
+            img(src='web/images/about4.jpg')
+            h3 TIM BIRD 
+            span consectetur
+            p
+              | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.
+        .client
+          h3
+            img(src='web/images/line.png')
+            i Our skills
+            img(src='web/images/line.png')
+          //
+            --------- clock position ----------
+          div
+          .pie-wrapper.progress-45.style-2
+            span.label
+              | 45
+              span.smaller %
+            .pie
+              .left-side.half-circle
+              .right-side.half-circle
+            .shadow
+            h3 WEB-DESIGN
+          .pie-wrapper.progress-75.style-2
+            span.label
+              | 75
+              span.smaller %
+            .pie
+              .left-side.half-circle
+              .right-side.half-circle
+            .shadow
+            h3 CREATIVE
+          .pie-wrapper.progress-95.style-2
+            span.label
+              | 95
+              span.smaller %
+            .pie
+              .left-side.half-circle
+              .right-side.half-circle
+            .shadow
+            h3 UI-DESIGN
+          .pie-wrapper.progress-45.style-2
+            span.label
+              | 45
+              span.smaller %
+            .pie
+              .left-side.half-circle
+              .right-side.half-circle
+            .shadow
+            h3 PROTOTYPES
+          .pie-wrapper.progress-75.style-2
+            span.label
+              | 75
+              span.smaller %
+            .pie
+              .left-side.half-circle
+              .right-side.half-circle
+            .shadow
+            h3 PHOTOGRAPHY
+    //
+      --------- message3 ----------
+    .message3
+      .wrap
+        h3 You Loked Over 6000px
+        p That's Great!
+    //
+      ------start-contact---------
+    #contact.contact
+      .wrap
+        h2 Contact Us
+        .contact-form
+          .form
+            h3 MAIL
+            form(method='post', action='#')
+              input.textbox(type='text', value=' Name', onfocus='this.value = \'\';', onblur='if (this.value == \'\') {this.value = \'Name\';}')
+              input.textbox(type='text', value='Email', onfocus='this.value = \'\';', onblur='if (this.value == \'\') {this.value = \'Email\';}')
+              .clear  
+              div
+                textarea(value='Message:', onfocus='this.value = \'\';', onblur='if (this.value == \'\') {this.value = \' Message\';}') Message
+              .span4
+                a(href='#')
+                  i
+                    input(type='submit', value='Submit mail')
+                  .clear
+          .para-contact
+            h4 MORE INFO
+            .get-intouch-left-address
+              p 2345 Setwant natrer, 1234
+              p Washington. United States.
+              p 2345 Setwant natrer, 1234
+              p Washington. United States.
+              p (401) 1234 567
+              p
+                a(href='mailto:info@mycompany.com')  info(at)appstore.com
+            .span4
+              a(href='#')
+                i
+                  input(type='submit', value='Purchase')
+                .clear
+            .clear  
+          a.mov-top(href='#home1')
+            span  
+          .clear  
+    //
+      ------//end-contact---------
+    //
+      --------- message3 ----------
+    .social
+      .wrap
+        h3 Connect With Us
+        p Follow Us On Social Networks
+        //
+          -start-social-icons--
+        .social-icons-set
+          ul
+            li
+              a.facebook(href='#')  
+            li
+              a.twitter(href='#')  
+            li
+              a.vimeo(href='#')  
+            li
+              a.rss(href='#')  
+            li
+              a.gplus(href='#')  
+            li
+              a.pin(href='#')  
+            .clear  
+          .clear  
+        //
+          -//End-social-icons--
+        .clear  
+    //
+      - footer-top -
+    .footer-top
+      .wrap
+        .col_1_of_3.span_1_of_3
+          h5 RECENT TWEETS
+          h6
+            img(src='web/images/twit.png', alt='')
+            a(href='#')
+              span booty, 15.10.2013
+          p
+            | Lorem Ipsum is simply dummy text of the printing and typesetting industry
+            lable Lorem Ipsum has been
+            | the industry's standard dummy text ever since
+          h6
+            img(src='web/images/twit.png', alt='')
+            a(href='#')
+              span booty, 15.10.2013
+          p Lorem Ipsum is simply dummy text of the printing and typesetting industry 
+        .col_1_of_3.span_1_of_3
+          h5 RECENT POSTS
+          h6.a 15.10.2013
+          p Lorem Ipsum is simply dummy text of the printing and typesetting industry
+          h6.a 15.10.2013
+          p Lorem Ipsum is simply dummy text of the printing and typesetting industry
+          h6.a 15.10.2013
+          p Lorem Ipsum is simply dummy text of the printing and typesetting industry
+        .col_1_of_3.span_1_of_3
+          h5 PHOTO STREAM
+          ul
+            li
+              img(src='web/images/pf-1.jpg', alt='')
+            li
+              img(src='web/images/pf-2.jpg', alt='')
+            li
+              img(src='web/images/pf-3.jpg', alt='')
+            li
+              img(src='web/images/pf-4.jpg', alt='')
+            li
+              img(src='web/images/pf-5.jpg', alt='')
+            li
+              img(src='web/images/pf-6.jpg', alt='')
+            li
+              img(src='web/images/pf-8.jpg', alt='')
+            li
+              img(src='web/images/pf-2.jpg', alt='')
+            li
+              img(src='web/images/pf-4.jpg', alt='')
+            li
+              img(src='web/images/pf-5.jpg', alt='')
+        .clear
+    .footer-bottom
+      .wrap
+        .image
+          a(href='index.html')
+            img(src='web/images/logo.png', alt='')
+        .copy-right
+          p
+            | Template
+            a(href='http://w3layouts.com/')   w3layouts.com
+        .clear
+    //
+       scroll_top_btn 
+    script(type='text/javascript', src='web/js/move-top.js')
+    script(type='text/javascript', src='web/js/easing.js')
+    script(type='text/javascript').
+      jQuery(document).ready(function($) {
+      $(".scroll").click(function(event){
+      event.preventDefault();
+      $('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+      });
+      });
+    a#toTop(href='#', style='display: block;')
+      span#toTopHover(style='opacity: 1;')
