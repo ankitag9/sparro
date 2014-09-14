@@ -7,9 +7,9 @@ import fs                                           = require('fs');
 import appInit                                      = require('./appInit');
 import Config                                       = require('./common/Config');
 
-var pjson = require('./../package.json');
+var pjson = require('./package.json');
 
-log4js.configure('/var/searchntalk/config/log4js.json');
+log4js.configure('/var/sparro/config/log4js.json');
 //Config.set(Config.VERSION, pjson['version']);
 
 //new Coral.MysqlDelegate(Config.get(Config.DATABASE_HOST), Config.get(Config.DATABASE_NAME),
@@ -32,7 +32,7 @@ if (Config.get(Config.ENABLE_HTTP))
     app.set('port', Config.get(Config.DASHBOARD_HTTP_PORT));
     app.listen(app.get('port'), serverStartupAction);
 
-    log4js.getDefaultLogger().debug("Captain started on port %d in %s mode", app.get('port'), app.settings.env);
+    log4js.getDefaultLogger().debug("Sparro started on port %d in %s mode", app.get('port'), app.settings.env);
 }
 
 if (Config.get(Config.ENABLE_HTTPS))
@@ -47,7 +47,7 @@ if (Config.get(Config.ENABLE_HTTPS))
 
     https.createServer(credentials, secureApp).listen(Config.get(Config.DASHBOARD_HTTPS_PORT), serverStartupAction);
 
-    log4js.getDefaultLogger().debug("Captain started on port %d in %s mode", Config.get(Config.DASHBOARD_HTTPS_PORT),
+    log4js.getDefaultLogger().debug("Sparro started on port %d in %s mode", Config.get(Config.DASHBOARD_HTTPS_PORT),
         secureApp.settings.env);
 }
 

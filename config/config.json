@@ -10,5 +10,9 @@
     "upload.path"                   :   "/var/sparro/upload",
 
     "Dashboard.httpPort"            :   6364,
-    "Dashboard.httpsPort"           :   6365
+    "Dashboard.httpsPort"           :   6365,
+
+    "enable.http"                   :   true
+
+
 }

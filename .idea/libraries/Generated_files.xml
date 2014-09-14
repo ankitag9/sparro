@@ -2,11 +2,17 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/common/Config.js" />
+        <item url="file://$PROJECT_DIR$/api/MainPage.js" />
+        <item url="file://$PROJECT_DIR$/api/index.js" />
         <item url="file://$PROJECT_DIR$/app.js" />
         <item url="file://$PROJECT_DIR$/appInit.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
+      <root url="file://$PROJECT_DIR$/common/Config.js" />
+      <root url="file://$PROJECT_DIR$/api/MainPage.js" />
+      <root url="file://$PROJECT_DIR$/api/index.js" />
       <root url="file://$PROJECT_DIR$/app.js" />
       <root url="file://$PROJECT_DIR$/appInit.js" />
     </CLASSES>

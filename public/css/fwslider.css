@@ -130,7 +130,7 @@ body > div.images-slider {
     #fwslider .slide_content {cursor: pointer;}
     #fwslider .slide_content_wrap {
 	max-width: 1280px;
-	margin: 11.5% auto 0;
+	margin: 0.5% auto 0;
 	}
 	#fwslider .title {
 		font-size: 4em;
@@ -146,7 +146,7 @@ body > div.images-slider {
     #fwslider .slide_content {cursor: pointer;}
     #fwslider .slide_content_wrap {
 	max-width: 1280px;
-	margin: 11.5% auto 0;
+	margin: 0.5% auto 0;
 	}
 	#fwslider .title {
 		font-size: 3em;
