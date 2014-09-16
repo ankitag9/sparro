@@ -3,3 +3,5 @@
 !.gitignore
 *.html
 DefinitelyTyped/
+*.js.map
+*.js
