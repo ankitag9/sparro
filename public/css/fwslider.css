@@ -134,7 +134,7 @@ body > div.images-slider {
 	}
 	#fwslider .title {
 		font-size: 4em;
-		padding: 141px 56px 0;
+		padding: 11% 56px 0;
 	}
 	#fwslider .description {
 		padding: 0px 0.9em 1em;
@@ -146,11 +146,11 @@ body > div.images-slider {
     #fwslider .slide_content {cursor: pointer;}
     #fwslider .slide_content_wrap {
 	max-width: 1280px;
-	margin: 0.5% auto 0;
+	margin: 11.5% auto 0;
 	}
 	#fwslider .title {
 		font-size: 3em;
-		padding: 141px 100px 0;
+		padding: 2% 100px 0;
 	}
 	#fwslider .description {
 		font-size: 2em;
@@ -167,7 +167,7 @@ body > div.images-slider {
 	}
 	#fwslider .title {
 		font-size: 3em;
-		padding: 100px 100px 0;
+		padding: 2% 100px 0;
 	}
 }
 @media only screen and (max-width:768px){
@@ -181,7 +181,7 @@ body > div.images-slider {
 	padding: 0.5em 0 0.2em;
 }
 #fwslider .title {
-		padding: 50px 100px 0;
+		padding: 4% 100px 0;
 }
 }
 @media only screen and (max-width:480px){
