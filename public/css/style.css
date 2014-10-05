@@ -1505,7 +1505,7 @@ body {
 .social {
 	background: url("../images/banner5.jpg") no-repeat;
 	background-size: 100%;
-	padding: 10% 0;
+	padding: 9% 0;
 	text-align: left;
 }
 .social h3{
@@ -1726,7 +1726,7 @@ body {
 		padding: 10% 0;
 	}
 	.social {
-		padding: 8.9% 0;
+		padding: 7% 0;
 	}
 }
 @media only screen and (max-width: 1280px){
@@ -1832,7 +1832,7 @@ body {
 		width: 38%;
 	}
 	.social {
-		padding: 9% 0;
+		padding: 7% 0;
 	}
 	#portfoliolist .portfolio {
 		width: 22.3%;
@@ -1906,7 +1906,7 @@ body {
 		width: 66%;
 	}
 	.social {
-		padding: 6% 0;
+		padding: 0% 0;
 	}
 	.pie-wrapper {
 		height: 100px;
@@ -2064,7 +2064,9 @@ body {
 		width: 84%;
 	}
 	.social {
-		padding: 3% 0;
+		padding: 0% 0;
+        background: url("../images/banner5-small.jpg") no-repeat;
+        background-size: 100%;
 	}
 	.span_1_of_3 {
 		width: 100%;
